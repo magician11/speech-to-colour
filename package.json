@@ -1,5 +1,5 @@
 {
-  "name": "speech-to-colour",
+  "name": "speech-to-colours",
   "version": "1.0.0",
   "description": "Using speech recognition to visualise colours.",
   "main": "src/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/magician11/speech-to-colour.git"
+    "url": "git+https://github.com/magician11/speech-to-colours.git"
   },
   "keywords": [
     "speech",
@@ -18,9 +18,9 @@
   "author": "Andrew Golightly <support@andrewgolightly.com> (http://www.golightlyplus.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/magician11/speech-to-colour/issues"
+    "url": "https://github.com/magician11/speech-to-colours/issues"
   },
-  "homepage": "https://github.com/magician11/speech-to-colour#readme",
+  "homepage": "https://github.com/magician11/speech-to-colours#readme",
   "devDependencies": {
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
@@ -35,7 +35,8 @@
     "node-sass": "^3.10.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
   },
   "dependencies": {
     "annyang": "^2.5.0",
