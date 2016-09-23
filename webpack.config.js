@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const webpackConfig = {
   entry: './src/index.jsx',
   output: {
@@ -8,12 +10,17 @@ const webpackConfig = {
     loaders: [
       { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel', query: { presets: ['es2015', 'react'] } },
       { test: /\.scss$/, loader: 'style!css!sass' },
-      { test: /\.html$/, loader: 'file?name=[name].[ext]' },
     ],
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'src/index.html',
+    }),
+  ],
 };
 
 module.exports = webpackConfig;

@@ -7,11 +7,11 @@ class SpeechToColour extends Component {
   constructor() {
     super();
 
-    const commands = {
-      'show me *colour': this.changeColour.bind(this),
-    };
-
     if (annyang) {
+      const commands = {
+        'show me *colour': this.changeColour.bind(this),
+      };
+
       annyang.addCommands(commands);
       annyang.start();
       this.state = {
