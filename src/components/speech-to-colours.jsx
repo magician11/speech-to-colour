@@ -1,17 +1,39 @@
 import React, { Component } from 'react';
-//import styling from './tag-bar.scss';
+import annyang from 'annyang';
+
+import mainStyles from '../styling/main.scss';
 
 class SpeechToColour extends Component {
   constructor() {
     super();
-    this.state = {
-      currentColour: 'red',
+
+    const commands = {
+      'show me *colour': this.changeColour.bind(this),
     };
+
+    annyang.addCommands(commands);
+
+    this.state = {
+      colour: 'white',
+    };
+
+    annyang.start();
+  }
+
+  changeColour(colourStr) {
+    this.setState({ colour: colourStr.replace(/ /g, '') });
+    console.log(colourStr);
   }
 
   render() {
+    const styling = {
+      backgroundColor: this.state.colour,
+    };
+
     return (
-      <h1>{this.state.currentColour}</h1>
+      <div style={styling} className={mainStyles['speech-to-colour']}>
+        <h1>{this.state.colour}</h1>
+      </div>
     );
   }
 }
