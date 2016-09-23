@@ -1,0 +1,42 @@
+{
+  "name": "speech-to-colour",
+  "version": "1.0.0",
+  "description": "Using speech recognition to visualise colours.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack -p",
+    "dev": "./node_modules/.bin/webpack-dev-server --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magician11/speech-to-colour.git"
+  },
+  "keywords": [
+    "speech",
+    "colours"
+  ],
+  "author": "Andrew Golightly <support@andrewgolightly.com> (http://www.golightlyplus.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magician11/speech-to-colour/issues"
+  },
+  "homepage": "https://github.com/magician11/speech-to-colour#readme",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0",
+    "html-webpack-plugin": "^2.22.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "annyang": "^2.5.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}
