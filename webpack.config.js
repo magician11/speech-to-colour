@@ -1,11 +1,8 @@
 const webpackConfig = {
-  entry: {
-    javascript: './src/index.jsx',
-    html: './src/index.html',
-  },
+  entry: './src/index.jsx',
   output: {
     path: 'dist',
-    filename: 'index.js',
+    filename: 'speech-to-colours.js',
   },
   module: {
     loaders: [
